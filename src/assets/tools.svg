@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>tools</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Enodo-Coding-Challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="tools" transform="translate(-1.000000, 1.000000)">
+            <g id="Group" transform="translate(12.000000, 0.000000)" stroke="#FFFFFF" stroke-width="2.4">
+                <path d="M2.42782693,0 C0.969606378,1.69110276 0.169606378,2.89110276 0.0278269301,3.6 C-0.113952518,4.30889724 0.286047482,5.10889724 1.22782693,6" id="Path"></path>
+                <path d="M5.33680999,2.85953749 C3.87858944,4.55064025 3.07858944,5.75064025 2.93680999,6.45953749 C2.79503055,7.16843472 3.19503055,7.96843472 4.13680999,8.85953749" id="Path" transform="translate(4.122897, 5.859537) scale(-1, 1) rotate(-89.000000) translate(-4.122897, -5.859537) "></path>
+            </g>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(7.500000, 11.500000) rotate(-45.000000) translate(-7.500000, -11.500000) " x="-1" y="10" width="17" height="3" rx="1.5"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(14.328427, 14.328427) scale(-1, 1) rotate(-45.000000) translate(-14.328427, -14.328427) " x="9.82842712" y="12.8284271" width="9" height="3" rx="1.5"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" transform="translate(4.500000, 5.000000) scale(-1, 1) rotate(-45.000000) translate(-4.500000, -5.000000) " x="0" y="4" width="9" height="2" rx="1"></rect>
+        </g>
+    </g>
+</svg>
