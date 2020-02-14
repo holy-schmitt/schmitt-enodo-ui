@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="45px" viewBox="0 0 71 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>operating</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Enodo-Coding-Challenge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="operating" transform="translate(-6.000000, -18.000000)">
+            <g transform="translate(9.000000, 21.000000)">
+                <path d="M0,2.5 C10.5050505,5.83333333 21.3383838,5.83333333 32.5,2.5 C43.6616162,-0.833333333 54.4949495,-0.833333333 65,2.5 L65,37.5 C54.4949495,34.8333333 43.6616162,34.8333333 32.5,37.5 C21.3383838,40.1666667 10.5050505,40.1666667 0,37.5 L0,2.5 Z" id="Path-3" stroke="#88B144" stroke-width="5"></path>
+                <circle id="Oval" fill="#88B144" cx="13" cy="22" r="4"></circle>
+                <circle id="Oval" fill="#88B144" cx="52" cy="20" r="4"></circle>
+                <path d="M39,11.2087912 C33.2222222,10.5128205 29.6111111,11.5567766 28.1666667,14.3406593 C26,18.5164835 34.6666667,19.5604396 36.8333333,24.7802198 C38.2777778,28.2600733 34.6666667,30 26,30" id="Path-4" stroke="#88B144" stroke-width="4.2" transform="translate(32.500000, 20.500000) rotate(-1.000000) translate(-32.500000, -20.500000) "></path>
+            </g>
+            <rect id="Rectangle" x="0" y="0" width="82" height="82"></rect>
+        </g>
+    </g>
+</svg>

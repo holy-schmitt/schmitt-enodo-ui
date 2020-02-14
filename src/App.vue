@@ -2,10 +2,22 @@
   <div id="app">
     <NavBar :userInitials="userInitials" :menuItems="menuItems"/>
     <SecondNavBar :property="property"/>
-    <PropertySummary :property="property"/>
-    <HistoricalOperatingExpenses :headers="opexHeaders" :items="opexItems"/>
-    <GPRCard/>
-    <OperatingExpensesCard/>
+    <div class="container">
+      <div class="md-layout md-gutter">
+        <div class="md-layout-item md-size-20">
+          <PropertySummary :property="property"/>
+        </div>
+        <div class="md-layout-item md-layout md-gutter">
+          <div class="md-layout-item">
+            <GPRCard/>
+          </div>
+          <div class="md-layout-item">
+            <OperatingExpensesCard/>
+          </div>
+        </div>
+      </div>
+      <!-- <HistoricalOperatingExpenses :headers="opexHeaders" :items="opexItems"/> -->
+    </div>
   </div>
 </template>
 
@@ -40,9 +52,9 @@ export default class App extends Vue {
   private property: object = {
     name: 'West Loop Luxury',
     address: '320 N Canal St, Chicago, IL 60606',
-    yearBuild: '--',
-    numberUnits: '--',
-    propetyType: '--',
+    yearBuild: '2010',
+    numberUnits: '240',
+    propetyType: 'Garden',
     avm: 7403292
   }
 
@@ -172,7 +184,11 @@ export default class App extends Vue {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
+}
+.container {
+  padding-top: 4vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 </style>
