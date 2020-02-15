@@ -174,8 +174,11 @@ export default class NavBar extends Vue {
                 stacked: true,
                 ticks: {
                   beginAtZero: false,
-                  min: 1448095.5,
-                  autoSkip: true
+                  min: 1448095,
+                  autoSkip: true,
+                  callback: (value) => {
+                    return '$' + value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+                  }
                 }
               }
             ]

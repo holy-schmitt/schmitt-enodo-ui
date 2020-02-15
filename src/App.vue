@@ -43,7 +43,6 @@ import OperatingExpensesCard from './components/OperatingExpensesCard.vue'
 })
 export default class App extends Vue {
 
-  private userInitials: string = 'AP'
   private menuItems: object[] = [
     { name: 'Property Analysis', active: true },
     { name: 'Rent Roll Analyzer', active: false },
