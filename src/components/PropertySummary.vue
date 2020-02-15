@@ -13,7 +13,7 @@
           {{property.yearBuild ? property.yearBuild : '--'}}
         </div>
         <div class="avm">
-          ${{property.avm ? (property.avm) : '--'}} AVM
+          {{formatAVM(property.avm)}}
         </div>
         <LateralNav :options="propertySections" />
       </md-card-content>
@@ -25,11 +25,19 @@
 import { Component, Prop, Vue } from 'vue-property-decorator'
 import LateralNav from './LateralNav.vue'
 
-
 @Component({
   components: {
     LateralNav
-  }
+  },
+  methods: {
+      formatAVM (avm) {
+        if (avm) {
+          return '$'+avm.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+' AVM';
+        } else {
+          return '--';
+        }
+      }
+    }
 })
 export default class NavBar extends Vue {
     @Prop()
@@ -51,6 +59,7 @@ export default class NavBar extends Vue {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 7px;
+    margin-top: 5px;
   }
   .street-subheader {
     font-size: 1.1rem;
@@ -59,13 +68,13 @@ export default class NavBar extends Vue {
   .description {
     font-size: 1.3rem;
     margin-top: 13px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
   .avm {
     font-size: 1.3rem;
     font-weight: bold;
     color: #88B144;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   .card-border {
     border:1px solid #A7BABF;
