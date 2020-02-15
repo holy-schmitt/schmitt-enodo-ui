@@ -104,8 +104,8 @@ export default class App extends Vue {
       notItalic: true,
     },
     {
-      name: '',
-      values: [null, null, null, null],
+      name: null,
+      values: ['-', '-', '-', '-'],
       isTotal: false,
     },
     {
@@ -169,8 +169,8 @@ export default class App extends Vue {
       isTotal: true,
     },
     {
-      name: '',
-      values: [null, null, null, null],
+      name: null,
+      values: ['-', '-', '-', '-'],
       isTotal: false,
     },
     {
