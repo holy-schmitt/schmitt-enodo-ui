@@ -7,7 +7,7 @@
         <div class="md-layout-item md-size-20">
           <PropertySummary :property="property"/>
         </div>
-        <div class="md-layout-item md-layout md-gutter">
+        <div class="md-layout-item md-layout">
           <div class="md-layout-item">
             <GPRCard/>
           </div>
