@@ -30,9 +30,9 @@ import LateralNav from './LateralNav.vue'
     LateralNav
   },
   methods: {
-      formatAVM (avm) {
+      formatAVM(avm) {
         if (avm) {
-          return '$'+avm.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")+' AVM';
+          return '$' + avm.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',') + ' AVM';
         } else {
           return '--';
         }
