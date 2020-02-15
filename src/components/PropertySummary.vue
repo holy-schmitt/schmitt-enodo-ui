@@ -1,6 +1,6 @@
 <template>
   <div>
-    <md-card class="card">
+    <md-card class="card-border">
       <md-card-media>
         <img src="https://maps.googleapis.com/maps/api/streetview?size=400x200&pitch=10&fov=180&location=320%20N%20Canal%20St,%20Chicago,%20IL%2060606&key=AIzaSyApsGVNO-Ms2sIJM4PtmwC5VfeutsZSExo">
       </md-card-media>
@@ -66,5 +66,9 @@ export default class NavBar extends Vue {
     font-weight: bold;
     color: #88B144;
     margin-bottom: 15px;
+  }
+  .card-border {
+    border:1px solid #A7BABF;
+    box-shadow: none;
   }
 </style>

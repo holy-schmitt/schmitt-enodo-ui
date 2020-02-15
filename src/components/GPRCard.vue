@@ -1,17 +1,10 @@
 <template>
-  <!-- <div>
-    Gross Potential Rent
-    
-  </div> -->
   <div>
-    <md-card>
-      <md-card-header>
-        <div class="md-title">
-          Gross Potential Rent
-        </div>
-      </md-card-header>
+    <md-card class="card-border">
       <md-card-content>
         <div>
+          <div class="header">Gross Potential Rent</div>
+          <md-divider class="divider"></md-divider>
           <canvas v-show="gprChart" :id="grossPotentialRentID"></canvas>
         </div>
       </md-card-content>
@@ -210,4 +203,19 @@ export default class NavBar extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .card-border {
+    border:1px solid #A7BABF;
+    box-shadow: none;
+  }
+  .header {
+    font-size: .9rem;
+    font-weight: bold;
+    margin-bottom: 13px;
+  }
+  .divider {
+    margin-bottom: 7px;
+    margin-left: -17px;
+    margin-right: -17px;
+    border:0.5px solid #A7BABF;
+  }
 </style>

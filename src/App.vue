@@ -3,7 +3,7 @@
     <NavBar :userInitials="userInitials" :menuItems="menuItems"/>
     <SecondNavBar :property="property"/>
     <div class="container">
-      <div class="md-layout md-gutter">
+      <div class="md-layout">
         <div class="md-layout-item md-size-20">
           <PropertySummary :property="property"/>
         </div>
@@ -14,9 +14,11 @@
           <div class="md-layout-item">
             <OperatingExpensesCard/>
           </div>
+          <div class="md-layout-item md-size-100">
+            <HistoricalOperatingExpenses :headers="opexHeaders" :items="opexItems"/>
+          </div>
         </div>
       </div>
-      <!-- <HistoricalOperatingExpenses :headers="opexHeaders" :items="opexItems"/> -->
     </div>
   </div>
 </template>

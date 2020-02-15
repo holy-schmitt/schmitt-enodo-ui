@@ -1,7 +1,7 @@
 <template>
   <div>
     <md-toolbar>
-      <h3>Property Analysis</h3>
+      <div class="header">Property Analysis</div>
       <div class="property">
         <u>{{property.name ? property.name : property.address}}</u>
       </div>
@@ -25,6 +25,10 @@ export default class SecondNavBar extends Vue {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .header {
+    font-size: .9rem;
+    font-weight: bold;
+  }
   .property {
     margin-left: 20px;
     font-size: 1.4rem;
