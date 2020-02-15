@@ -1,6 +1,6 @@
 <template>
   <div>
-    <md-toolbar>
+    <md-toolbar class="toolbar">
       <div class="header">Property Analysis</div>
       <div class="property">
         <u>{{property.name ? property.name : property.address}}</u>
@@ -43,5 +43,9 @@ export default class SecondNavBar extends Vue {
     color: #88B144;
     border:2px solid #88B144;
     text-transform: capitalize;
+  }
+  .toolbar {
+    border-bottom: 0.5px solid #A7BABF;
+    box-shadow: none;
   }
 </style>

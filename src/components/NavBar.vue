@@ -44,6 +44,7 @@ export default class NavBar extends Vue {
 <style scoped lang="scss">
   .navbar { 
     background-color: #374950;
+    box-shadow: none;
   }
   .left-button {
     color: #FFFFFF;
