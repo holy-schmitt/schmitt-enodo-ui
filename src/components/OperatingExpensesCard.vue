@@ -42,7 +42,14 @@ export default class NavBar extends Vue {
     }
   private chartOptions: object = {
     responsive: true,
-    maintainAspectRatio: false
+    maintainAspectRatio: false,
+    legend: {
+      display: true,
+      position: 'top',
+      labels: {
+        boxWidth: 15
+      }
+    }
   }
 
   private mounted() {
