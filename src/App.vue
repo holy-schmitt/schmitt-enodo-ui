@@ -60,122 +60,123 @@ export default class App extends Vue {
     avm: 7403292
   }
 
-  private opexHeaders = ['T12', 'T9', 'T6']
+  private opexHeaders = ['T12', 'T9', 'T6', 'T3']
   private opexItems = [
     {
-      name: 'Gross Potential Rent (GPR)',
-      values: [-27887, -30447, -32964],
-      isTotal: false
+      name: 'Gross Potential Revenue',
+      values: [8267438, 8256651, 8254872, 8293104],
+      isTotal: false,
     },
     {
-      name: 'Less Vacancy Loss',
-      values: [-97156, -73531, -89770],
-      isTotal: false
+      name: 'Vacancy Loss',
+      values: [-1914476, -1280007, -781996, -592272],
+      isTotal: false,
     },
     {
-      name: 'Less Bad Debt',
-      values: [-40569, -50379, -64320],
-      isTotal: false
+      name: 'Collection Loss',
+      values: [-8589, -11452, -17178, 0],
+      isTotal: false,
     },
     {
-      name: 'Less Concessions',
-      values: [-61595, -59964, -71150],
-      isTotal: false
+      name: 'Concessions',
+      values: [-414478, -383775, -278352, -43556],
+      isTotal: false,
     },
     {
       name: 'Net Rentable Income',
-      values: [-227207, -214321, -258204],
-      isTotal: true
+      values: [5929895, 6581417, 7177346, 7657276],
+      isTotal: true,
     },
     {
-      name: 'Laundry/Vending Income (Net)',
-      values: [0, 0, 0],
-      isTotal: false
+      name: 'Other Income',
+      values: [358980, 408028, 489346, 476672],
+      isTotal: false,
     },
     {
-      name: 'Parking Income (Net)',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Commercial Income (Net)',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'RUBS (income line item)',
-      values: [71476, 71509, 64466],
-      isTotal: false
-    },
-    {
-      name: 'RUBS (expense line item)',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Other Income (Allowable)',
-      values: [70599, 74488, 65118],
-      isTotal: false
-    },
-    {
-      name: 'App Fee',
-      values: [5440, 4693, 3320],
-      isTotal: false
-    },
-    {
-      name: 'Forfeit Deposits',
-      values: [10600, 7771, 7946],
-      isTotal: false
-    },
-    {
-      name: 'Late/Early Term Fees',
-      values: [39292, 37328, 35122],
-      isTotal: false
-    },
-    {
-      name: 'Pet Deposits',
-      values: [8371, 7407, 6830],
-      isTotal: false
-    },
-    {
-      name: 'Premiums',
-      values: [7134, 7881, 8074],
-      isTotal: false
-    },
-    {
-      name: 'Corporate Prem.',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Medicare/Medicaid',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Nursing/Medical Income',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Meals Income',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Second Res. Income',
-      values: [0, 0, 0],
-      isTotal: false
-    },
-    {
-      name: 'Unallowable',
-      values: [1122, 1421, 2010],
-      isTotal: false
+      name: 'Administrative',
+      values: [0, 0, 0, 0],
+      isTotal: false,
     },
     {
       name: 'EGI',
-      values: [-13173,  -1823,  -65318],
-      isTotal: true
+      values: [6288875, 6989445, 7666692, 8133948],
+      isTotal: true,
+      notItalic: true,
+    },
+    {
+      name: '',
+      values: [null, null, null, null],
+      isTotal: false,
+    },
+    {
+      name: 'Property Taxes',
+      values: [1099828, 1053756, 1179530, 1165516],
+      isTotal: false,
+    },
+    {
+      name: 'Insurance',
+      values: [357246, 442201, 595266, 293508],
+      isTotal: false,
+    },
+    {
+      name: 'Contract Services',
+      values: [326058, 377784, 570950, 582436],
+      isTotal: false,
+    },
+    {
+      name: 'Repairs & Maintenance',
+      values: [380047, 498688, 589116, 498792],
+      isTotal: false,
+    },
+    {
+      name: 'Utilities',
+      values: [405150, 412069, 406714, 554088],
+      isTotal: false,
+    },
+    {
+      name: 'Water & Sewage',
+      values: [0, 0, 0, 0],
+      isTotal: false,
+    },
+    {
+      name: 'Management Fees',
+      values: [122424, 135312, 147842, 156456],
+      isTotal: false,
+    },
+    {
+      name: 'Salaries & Personnel',
+      values: [453897, 447720, 439506, 395428],
+      isTotal: false,
+    },
+    {
+      name: 'Marketing & Advertising',
+      values: [204256, 187792, 136698, 123156],
+      isTotal: false,
+    },
+    {
+      name: 'Total Expenses',
+      values: [3348906, 3555322, 4065622, 3769380],
+      isTotal: true,
+    },
+    {
+      name: 'Reserves',
+      values: [0, 0, 0, 0],
+      isTotal: false,
+    },
+    {
+      name: 'Total Expenses & Reserves',
+      values: [3348906, 3555322, 4065622, 3769380],
+      isTotal: true,
+    },
+    {
+      name: '',
+      values: [null, null, null, null],
+      isTotal: false,
+    },
+    {
+      name: 'Net Cash Flow',
+      values: [2939969, 3434123, 3601070, 4364568],
+      isTotal: true,
     }
   ]
 }
@@ -192,5 +193,6 @@ export default class App extends Vue {
   padding-top: 4vh;
   padding-left: 5vw;
   padding-right: 5vw;
+  background-color: #FBFBFB;
 }
 </style>

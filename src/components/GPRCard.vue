@@ -206,6 +206,7 @@ export default class NavBar extends Vue {
   .card-border {
     border:1px solid #A7BABF;
     box-shadow: none;
+    background-color: #FFFFFF;
   }
   .header {
     font-size: .9rem;
