@@ -15,7 +15,7 @@
         MY PROPERTIES
       </md-button>
       <div class="md-toolbar-section-end">
-        <i class="italic">
+        <i class="white">
           Remaining Properties:
         </i>
         <h3 class="remaining-properties">2</h3>
@@ -62,7 +62,7 @@ export default class NavBar extends Vue {
     margin-left: 5px;
     margin-right: 15px;
   }
-  .italic {
+  .white {
     color: #FFFFFF;
   }
   .help {

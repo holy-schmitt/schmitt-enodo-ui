@@ -227,7 +227,4 @@ export default class NavBar extends Vue {
     margin-right: -17px;
     border:0.5px solid #A7BABF;
   }
-  .canvas-container {
-    height: 5vh;
-  }
 </style>
