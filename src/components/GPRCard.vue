@@ -5,7 +5,9 @@
         <div>
           <div class="header">Gross Potential Rent</div>
           <md-divider class="divider"></md-divider>
-          <canvas v-show="gprChart" :id="grossPotentialRentID"></canvas>
+          <div class="chart-container" style="height:20vh; width:35vw">
+            <canvas v-show="gprChart" :id="grossPotentialRentID"></canvas>
+          </div>
         </div>
       </md-card-content>
     </md-card>
@@ -163,6 +165,7 @@ export default class NavBar extends Vue {
         },
         options: {
           responsive: true,
+          maintainAspectRatio: false,
           scales: {
             xAxes: [
               {
@@ -223,5 +226,8 @@ export default class NavBar extends Vue {
     margin-left: -17px;
     margin-right: -17px;
     border:0.5px solid #A7BABF;
+  }
+  .canvas-container {
+    height: 5vh;
   }
 </style>

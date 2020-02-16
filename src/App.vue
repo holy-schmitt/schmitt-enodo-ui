@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <NavBar :userInitials="userInitials" :menuItems="menuItems"/>
+    <NavBar :menuItems="menuItems"/>
     <SecondNavBar :property="property"/>
     <div class="container">
       <div class="md-layout">
