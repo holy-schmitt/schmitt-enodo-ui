@@ -11,7 +11,7 @@
         TOOLS
       </md-button>
       <md-button class="left-button">
-        <img class="toolbar-icon" src="../assets/properties.svg" alt="properties" height="20" width="20">
+        <img class="toolbar-icon" src="../assets/properties.svg" alt="properties" height="20" width="18">
         MY PROPERTIES
       </md-button>
       <div class="md-toolbar-section-end">
@@ -20,7 +20,11 @@
         </i>
         <h3 class="remaining-properties">2</h3>
         <img class="toolbar-icon" src="../assets/divider.png" alt="divider" height="5">
-        <img class="help" src="../assets/help.svg" alt="help" height="20" width="20">
+        <md-button class="md-icon-button">
+          <md-icon>
+            <img class="help" src="../assets/help.svg" alt="help" height="20" width="20">
+          </md-icon>
+        </md-button>>
         <img src="../assets/user.png" alt="user" height="35" width="35">
       </div>
     </md-toolbar>
